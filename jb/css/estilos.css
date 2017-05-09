@@ -1,0 +1,189 @@
+/*Estilos Globales*/
+body{
+  font: 14px 'Montserrat', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+.container{
+  width: 75%;
+	margin:auto;
+  overflow: hidden;
+  text-align: center;
+}
+.container2{
+  width: 50%;
+	margin:auto;
+  overflow: hidden;
+  text-align: center;
+}
+.button{
+  padding: 15px 28px;
+  margin: 0 10px;
+  background: rgba(255, 255, 255, 0.3);
+  color:white;
+  font-size: 16px;
+  border-radius: 24px;
+  text-decoration: none;
+  }
+  p.sectionNumber{
+    color:gray;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+  h2{
+    font-size: 24px;
+    margin-top: 0;
+  }
+
+/*Header*/
+header{
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  position: fixed;
+  width: 100%;
+}
+nav a{
+  color: white;
+  opacity: 0.6;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+nav a:hover{
+  opacity: 0.8;
+}
+header ul{
+  padding: 0;
+  margin: 0;
+}
+header li{
+  float: left;
+  display:inline;
+  padding-left: 20px;
+}
+#logo{
+  float: left;
+  padding-top: 5px;
+}
+nav{
+  float: right;
+  margin-top: 16px;
+}
+.navItem {
+    padding: 0 4px 10px 4px;
+    margin-left: 15px;
+}
+.active{
+  border-bottom: 4px solid white;
+}
+.current{
+  opacity: 1;
+}
+
+/*Welcome*/
+.cover{
+  background-image: url("../images/bg.jpg");
+  height: 100vh;
+  background-size: cover;
+}
+#welcome{
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#welcome h1{
+  font-weight: 700;
+  font-size: 38px;
+  margin: 220px 0;
+}
+
+/*About*/
+#about{
+background: #f7f7f7;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+p.aboutme{
+  color: gray;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 50px;
+}
+
+/*Services*/
+#services{
+  background: #eaeaea;
+}
+.bigBox{
+  display: flex;
+  justify-content: space-between;
+}
+.servicesBox{
+  display: inline-block;
+  width: 20%;
+  margin: 30px 0 30px 0;
+}
+.servicesBox img{
+width: 86px;
+}
+#services h5{
+  color: grey;
+  font-weight: normal;
+  font-size: 14px;
+}
+#services h3{
+  color: #474747;
+}
+#services h3:hover{
+  color: #00ACED;
+  transition: 200ms;
+}
+
+
+
+
+
+.iconSection{
+  width: 38px;
+  display: block;
+  margin: 0 auto;
+}
+/*Mouse animation*/
+.mouse-wrapper {
+  margin: 100px auto 0px auto;
+  display: block;
+  width: 28px;
+}
+.mouse {
+  width: 28px;
+  height: 45px;
+  border: 3px solid white;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+}
+.mouse .mouse-scroll {
+  width: 4px;
+  height: 4px;
+  border-radius: 2px;
+  background: white;
+  position: relative;
+  top: 10px;
+  left: 12px;
+  -webkit-animation: scrolls 1.3s ease-out infinite;
+}
+@-webkit-keyframes scrolls{
+  0%{
+    top:10px;opacity:1;height:4px;
+  }
+  95%{
+    top:18px;opacity:0;height:10px;
+  }
+  100%{
+    top:8px;opacity:1;height:4px;
+  }
+}
